@@ -187,7 +187,7 @@ char * NumberToString(int num)
 	int index = 0;
 	while (num != 0)
 	{
-		if (int(num / 100) < 13)
+		if (int(num / (countZero / 100)) < 13)
 		{
 			countZero /= 100;
 			cutNum = int(num / countZero);

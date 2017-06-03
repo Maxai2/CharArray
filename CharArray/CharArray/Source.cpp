@@ -137,63 +137,63 @@ int main()
 	/*	h. char * NumberToString ( int number); - функция конвертирует
 	число в строку и возвращает указатель на эту строку.*/
 
-	//cout << "Symbols: ";
-	//short row = 1, col = 0;
-	//for (int i = 32; i <= 126; i++)
-	//{
-	//	SetConsoleCursorPosition(h, { col, row });
-	//	if (32 <= i && i <= 47 || 58 <= i && i <= 64 || 91 <= i && i <= 96 || 123 <= i && i <= 126)
-	//	{
-	//		cout << "\'" << char(i) << "\' - " << i;
-	//		row++;
-	//	}
-	//	
-	//	if (row == 5 && row != 0)
-	//	{
-	//		col += 13; row = 1;
-	//	}
-	//}
+	cout << "Symbols: ";
+	short row = 1, col = 0;
+	for (int i = 32; i <= 126; i++)
+	{
+		SetConsoleCursorPosition(h, { col, row });
+		if (32 <= i && i <= 47 || 58 <= i && i <= 64 || 91 <= i && i <= 96 || 123 <= i && i <= 126)
+		{
+			cout << "\'" << char(i) << "\' - " << i;
+			row++;
+		}
+		
+		if (row == 5 && row != 0)
+		{
+			col += 13; row = 1;
+		}
+	}
 
-	//SetConsoleCursorPosition(h, { 0, 6 });
-	//cout << "Numbers: ";
-	//row = 7, col = 0;
-	//for (int i = 48; i <= 57; i++)
-	//{
-	//	SetConsoleCursorPosition(h, { col, row });
-	//	cout << "\'" << char(i) << "\' - " << i;
-	//	row++;
+	SetConsoleCursorPosition(h, { 0, 6 });
+	cout << "Numbers: ";
+	row = 7, col = 0;
+	for (int i = 48; i <= 57; i++)
+	{
+		SetConsoleCursorPosition(h, { col, row });
+		cout << "\'" << char(i) << "\' - " << i;
+		row++;
 
-	//	if (row == 9 && row != 0)
-	//	{
-	//		col += 13; row = 7;
-	//	}
-	//}
+		if (row == 9 && row != 0)
+		{
+			col += 13; row = 7;
+		}
+	}
 
-	//SetConsoleCursorPosition(h, { 0, 10 });
-	//cout << "Alphabets: ";
-	//row = 11, col = 0;
-	//for (int i = 65; i <= 90; i++)
-	//{
-	//	SetConsoleCursorPosition(h, { col, row });
-	//	if (i <= 67)
-	//		cout << "\'" << char(i) << "\' - " << i << " \'" << char(i + 32) << "\' - " << i + 32 << "  |";
-	//	else
-	//		cout << "\'" << char(i) << "\' - " << i << " \'" << char(i + 32) << "\' - " << i + 32 << " |";
+	SetConsoleCursorPosition(h, { 0, 10 });
+	cout << "Alphabets: ";
+	row = 11, col = 0;
+	for (int i = 65; i <= 90; i++)
+	{
+		SetConsoleCursorPosition(h, { col, row });
+		if (i <= 67)
+			cout << "\'" << char(i) << "\' - " << i << " \'" << char(i + 32) << "\' - " << i + 32 << "  |";
+		else
+			cout << "\'" << char(i) << "\' - " << i << " \'" << char(i + 32) << "\' - " << i + 32 << " |";
 
-	//	row++;
+		row++;
 
-	//	if (row == 16 && row != 0)
-	//	{
-	//		col += 20; row = 11;
-	//	}
-	//}
+		if (row == 16 && row != 0)
+		{
+			col += 20; row = 11;
+		}
+	}
 
-	//SetConsoleCursorPosition(h, { 0, 17 });
-	//cout << "Number: ";
-	//long long num;
-	//cin >> num;
+	SetConsoleCursorPosition(h, { 0, 17 });
+	cout << "Number: ";
+	unsigned __int64 num;
+	cin >> num;
 
-	//cout << "Your number in text format by ASCII table is(32 is space): " << NumberToString(num) << endl;
+	cout << "Your number in text format by ASCII table is(32 is space): " << NumberToString(num) << endl;
 	//-----------------------------------------------------------------------------------------------
 	/*	i. char * Uppercase (char * str1); - функция преобразует строку
 	в верхний регистр.*/
