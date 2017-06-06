@@ -55,15 +55,15 @@ int main()
 	присоединяет строку str2 к строке str1. Функция возвращает
 	указатель на первую строку str1.*/
 
-	//cout << "String one: ";
+	//cout << "string one: ";
 	//char *str1 = new char[size];
 	//cin.getline(str1, size);
-	//cout << "String two: ";
+	//cout << "string two: ";
 	//char *str2 = new char[size];
 	//cin.getline(str2, size);
 
 	//str1 = mystrcat(str1, str2);
-	//cout << "\n\nString two + string one: " << str1 << endl;
+	//cout << "\nstring two + string one: " << str1 << endl;
 	//-----------------------------------------------------------------------------------------------
 	/*	d. char * mystrchr (char * str, char s); - функция осуществляет
 	поиск символа s в строке str. Функция возвращает указатель
@@ -147,7 +147,7 @@ int main()
 			cout << "\'" << char(i) << "\' - " << i;
 			row++;
 		}
-		
+
 		if (row == 5 && row != 0)
 		{
 			col += 13; row = 1;
@@ -190,7 +190,7 @@ int main()
 
 	SetConsoleCursorPosition(h, { 0, 17 });
 	cout << "Number: ";
-	unsigned __int64 num;
+	unsigned _int64 num;
 	cin >> num;
 
 	cout << "Your number in text format by ASCII table is(32 is space): " << NumberToString(num) << endl;
@@ -216,5 +216,9 @@ int main()
 	/*	k. char * mystrrev (char * str); - функция реверсирует строку и
 	возвращает указатель на новую строку.*/
 
+	//cout << "Text: ";
+	//char *text = new char(size);
+	//cin.getline(text, size);
 
+	//cout << "Your text in revers format: " << mystrrev(text) << endl;
 }
