@@ -129,12 +129,25 @@ char * mystrstr(char * str, char * phrase)
 
 int mystrcmp(const char * str1, const char * str2)
 {
-	if (mystrlen(str1) < mystrlen(str2))
-		return -1;
-	else if (mystrlen(str1) == mystrlen(str2))
-		return 0;
-	else if (mystrlen(str1) > mystrlen(str2))
-		return 1;
+	//if (mystrlen(str1) < mystrlen(str2))
+	//	return -1;
+	//else if (mystrlen(str1) == mystrlen(str2))
+	//	return 0;
+	//else if (mystrlen(str1) > mystrlen(str2))
+	//	return 1;
+
+	int index = 0;
+	while (str1[index] != '\0' || str2[index] != '\0')
+	{
+		if (str1[index] > str2[index])
+			return -1;
+		else if (str1[index] < str2[index])
+			return 1;
+
+		index++;
+	}
+	return 0;
+
 }
 
 unsigned _int64 StringToNumber(char * str)
